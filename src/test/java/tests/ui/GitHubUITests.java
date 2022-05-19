@@ -33,7 +33,7 @@ public class GitHubUITests extends TestBase {
     }
 
     @Test
-    @Feature("Авторизация")
+    @Feature("Авторизация на сайте")
     @DisplayName("Авторизация пользователя с неверным паролем")
     void authorizationUserWithNotRightPassword() {
         gitHubPage.openPage(BASE_URL);
