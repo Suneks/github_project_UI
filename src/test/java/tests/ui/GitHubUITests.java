@@ -25,7 +25,6 @@ public class GitHubUITests extends TestBase {
     GitHubPage gitHubPage = new GitHubPage();
 
     @Test
-    @Feature("Поиск")
     @DisplayName("Поиск репозитория через поисковую строку")
     void searchRepo() {
         gitHubPage.openPage(BASE_URL)
@@ -33,7 +32,6 @@ public class GitHubUITests extends TestBase {
     }
 
     @Test
-    @Feature("Авторизация на сайте")
     @DisplayName("Авторизация пользователя с неверным паролем")
     void authorizationUserWithNotRightPassword() {
         gitHubPage.openPage(BASE_URL);
@@ -46,7 +44,6 @@ public class GitHubUITests extends TestBase {
     }
 
     @Test
-    @Feature("Разделы на сайте")
     @DisplayName("Открытие вкладки team")
     void openTabFeature() {
         gitHubPage.openPage(BASE_URL)
@@ -55,7 +52,6 @@ public class GitHubUITests extends TestBase {
     }
 
     @Test
-    @Feature("Заголовок")
     @DisplayName("Заголовок страницы должен содержать текст заголовка")
     void titleTest() {
         step("Open url 'https://github.com/'", () ->
@@ -70,7 +66,6 @@ public class GitHubUITests extends TestBase {
     }
 
     @Test
-    @Feature("Консоль")
     @DisplayName("В консоли не должно быть ошибок")
     void consoleShouldNotHaveErrorsTest() {
         step("Open url 'https://github.com/'", () ->
