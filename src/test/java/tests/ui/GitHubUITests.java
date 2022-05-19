@@ -71,7 +71,7 @@ public class GitHubUITests extends TestBase {
         step("Open url 'https://github.com/'", () ->
                 open("https://github.com/"));
 
-        step("Console logs should not contain text 'SEVERE'", () -> {
+        step("Console log should not contain text 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
             String errorText = "SEVERE";
 
